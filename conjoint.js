@@ -34,6 +34,8 @@ var veducation = ["Completed primary education", "Some high school education"];
 var vShanlanguagesKC = ["Shan, Burmese", "Shan, Jingphaw, Burmese"];
 var vBurmeselanguagesKC = ["Burmese", "Burmese, Shan, Jingphaw", "Burmese, Jingphaw", "Burmese, Shan"];
 var vKachinlanguagesKC = ["Jingphaw, Burmese", "Jingphaw, Shan, Burmese"]; 
+var vShanlanguagesYGN =["Burmese", "Shan, Burmese"]
+var vKachinlanguagesYGN =["Burmese", "Jingphaw, Burmese"]
 	
 var traits_a = [vname[0],
 			vhometown[Math.floor(Math.random()*vhometown.length)],
@@ -43,7 +45,7 @@ var traits_a = [vname[0],
 
 function getlanguageA ( ) {
 	if (traits_a[0] =="Sai Maung Maung" && traits_a[1] =="Hlegu township, Yangon region") {
-		var vlanguagespokenA = vShanlanguagesKC[0];
+		var vlanguagespokenA = vShanlanguagesYGN[Math.floor(Math.random()*vShanlanguagesYGN.length)];	
 	} else if (traits_a[0] =="Sai Maung Maung" && traits_a[1] == "Waingmaw township, Kachin state") {
 		var vlanguagespokenA = vShanlanguagesKC[Math.floor(Math.random()*vShanlanguagesKC.length)];	
 	} else if (traits_a[0]=="Aung Kyang Ko" && traits_a[1] =="Hlegu township, Yangon region") {
@@ -53,7 +55,7 @@ function getlanguageA ( ) {
 	} else if (traits_a[0]=="Lahpai Zau Let" &&  traits_a[1]== "Waingmaw township, Kachin state") {
 		var vlanguagespokenA = [vKachinlanguagesKC[Math.floor(Math.random()*vKachinlanguagesKC.length)]];
 	} else if (traits_a[0]=="Lahpai Zau Let" &&  traits_a[1] =="Hlegu township, Yangon region") {
-		var vlanguagespokenA  = vKachinlanguagesKC[1];		
+		var vlanguagespokenA  = vKachinlanguagesYGN[Math.floor(Math.random()*vKachinlanguagesYGN.length)];		
 	} 
 	
 	return vlanguagespokenA;
@@ -67,7 +69,7 @@ var traits_b = [vname[1],
 
 function getlanguageB ( ) {	
 		if (traits_b[0] =="Sai Maung Maung" && traits_b[1] =="Hlegu township, Yangon region") {
-		var vlanguagespokenB = vShanlanguagesKC[0];
+		var vlanguagespokenB = vShanlanguagesYGN[Math.floor(Math.random()*vShanlanguagesYGN.length)];	
 	} else if (traits_b[0]=="Sai Maung Maung" && traits_b[1]  == "Waingmaw township, Kachin state") {
 		var vlanguagespokenB = vShanlanguagesKC[Math.floor(Math.random()*vShanlanguagesKC.length)];	
 	} else if (traits_b[0]=="Aung Kyang Ko" && traits_b[1] =="Hlegu township, Yangon region") {
@@ -77,7 +79,7 @@ function getlanguageB ( ) {
 	} else if (traits_b[0]=="Lahpai Zau Let" && traits_b[1] == "Waingmaw township, Kachin state") {
 		var vlanguagespokenB = [vKachinlanguagesKC[Math.floor(Math.random()*vKachinlanguagesKC.length)]];
 	} else if (traits_b[0]=="Lahpai Zau Let" && traits_b[1] =="Hlegu township, Yangon region") {
-		var vlanguagespokenB  = vKachinlanguagesKC[1];		
+		var vlanguagespokenB  = vKachinlanguagesYGN[Math.floor(Math.random()*vKachinlanguagesYGN.length)];		
 	} 
 	return vlanguagespokenB;
 }
